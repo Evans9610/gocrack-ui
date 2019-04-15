@@ -193,9 +193,9 @@ router.beforeEach((to, from, next) => {
   }
 
   if (to.meta.title) {
-    document.title = `GoCrack - ${to.meta.title}`
+    document.title = `BigPlatform - ${to.meta.title}`
   } else {
-    document.title = `GoCrack`
+    document.title = `BigPlatform`
   }
 
   next()
