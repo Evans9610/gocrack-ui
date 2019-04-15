@@ -6,9 +6,9 @@ export default {
   performRequest (apiConfig, method, route, optionalAxiosOptions = {}) {
     let axiosOptions = {
       method: method,
-      withCredentials: true,
-      xsrfHeaderName: 'X-Xsrf-Token',
-      xsrfCookieName: 'XSRF-TOKEN',
+      // withCredentials: true,
+      // xsrfHeaderName: 'X-Xsrf-Token',
+      // xsrfCookieName: 'XSRF-TOKEN',
       baseURL: `${apiConfig.server}${apiConfig.base_endpoint}/`,
       url: route,
       ...optionalAxiosOptions
